@@ -1,13 +1,48 @@
 
-console.log("Conditional Expression in js  ")
 
-let a =prompt("whats your age??")
+//  let age =prompt("enter your age here ?")
 
-if(a>=0 && a<=18){
-    alert("you are not able to drive you r not of 18+")
-}
+//  if(age >=18){
+//     document.write("you can drive")
+//  }
 
-else if(a>18){
- alert("now you are aligible for driving")
-}
+//  else if(age == ""){
+//  alert("plz enter a valid input")
+//  }
+//  else{
+//  document.write("you cannot drive")
+//  }
+
+let age = document.querySelector("input")
+let btn = document.querySelector("button")
+let result = document.querySelector("h2")
+
+btn.addEventListener("click", () => {
+
+    if (age.value >= 18){
+
+        result.innerText = "obviously you can drive now!!"
+        result.style.color = "green"
+    }
+        
+        
+
+else if (age.value == "") {
+        result.innerText = "enter a valid input!!"
+        result.style.color = "yellow"
+
+    }
+
+
+
+    else {
+        result.innerText = "so sorry you cannot drive!!"
+        result.style.color = "red"
+
+    }
+
+    // age.value = null
+    age.value = ""
+})
+
 
