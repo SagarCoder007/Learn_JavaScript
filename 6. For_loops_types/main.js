@@ -62,8 +62,20 @@ const users = [
 ];
 
 
-for (let a in users) {
-    console.log(users[a].name)
-    document.write(users[a].name)
-}
-    //    console.log(typeof users)
+// for (let a in users) {
+//     console.log(users[a].name)
+//     document.write(users[a].name)
+// }
+//     //    console.log(typeof users)
+
+ Array.from(users).forEach((key,a)=>{
+
+     
+     document.write(key+":"+a.name)
+ })
+
+// for (let a in users) {
+//          console.log()
+//      }
+       
+    
