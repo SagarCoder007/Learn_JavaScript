@@ -30,6 +30,7 @@ let data_entry = function () {
         td_email.innerHTML = input_email.value
         td_phone.innerHTML = input_phone.value
         tr.append(td_index, td_name, td_email, td_phone)
+        
 
         table.appendChild(tr)
 
